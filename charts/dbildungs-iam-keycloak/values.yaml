@@ -12,6 +12,9 @@ schoolsh:
   clientId: https://school-sh.invalid
   rootUrl: https://school-sh.invalid
 
+vidis:
+  redirectUri: ""
+
 auth:
   # existingSecret: Refers to a secret already present in the cluster, which is required for the authentication and configuration of the database setup tasks.
   existingSecret: ""
@@ -35,6 +38,8 @@ auth:
   schoolsh_clientSecret: ""
   schoolsh_signingCertificate: ""
   schoolsh_encryptionCertificate: ""
+  keycloak_vidis_clientId: ""
+  keycloak_vidis_clientSecret: ""
 
 
 command: []
