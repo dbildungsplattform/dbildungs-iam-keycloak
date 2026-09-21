@@ -161,16 +161,6 @@ spec:
                 secretKeyRef:
                   name: {{ default .Values.auth.existingSecret .Values.auth.secretName }}
                   key: keycloak-schoolsh-encryptionCertificate
-            - name: VIDIS_KEYCLOAK_CLIENT_ID
-              valueFrom:
-                secretKeyRef:
-                  name: {{ default .Values.auth.existingSecret .Values.auth.secretName }}
-                  key: keycloak-vidis-clientId
-            - name: VIDIS_CLIENT_SECRET
-              valueFrom:
-                secretKeyRef:
-                  name: {{ default .Values.auth.existingSecret .Values.auth.secretName }}
-                  key: keycloak-vidis-clientSecret
             - name: INTERNAL_COMMUNICATION_API_KEY
               valueFrom:
                 secretKeyRef:

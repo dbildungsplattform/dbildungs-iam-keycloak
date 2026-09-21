@@ -305,7 +305,7 @@
         "${KC_NEXTCLOUD_CLIENT_ID}": [],
         "spsh-service": [],
         "spsh-test": [],
-        "${VIDIS_KEYCLOAK_CLIENT_ID}": [],
+        "vidis-test": [],
         "broker": [
           {
             "id": "e3b83cee-0556-4164-b94b-723f60f85a8c",
@@ -1453,7 +1453,7 @@
         }
       },
       {
-        "clientId": "${VIDIS_KEYCLOAK_CLIENT_ID}",
+        "clientId": "vidis-test",
         "name": "VIDIS-Testumgebung",
         "description": "",
         "rootUrl": "",
@@ -1463,9 +1463,9 @@
         "enabled": true,
         "alwaysDisplayInConsole": false,
         "clientAuthenticatorType": "client-secret",
-        "secret": "${VIDIS_CLIENT_SECRET}",
+        "secret": "${KC_CLIENT_SECRET}",
         "redirectUris": [
-          "${VIDIS_REDIRECT_URI}"
+          "/*"
         ],
         "webOrigins": [
           "/*"
@@ -1483,7 +1483,6 @@
         "attributes": {
           "oidc.ciba.grant.enabled": "false",
           "backchannel.logout.session.required": "false",
-          "backchannel.logout.url": "${VIDIS_LOCAL_BACKCHANNEL_LOGOUT_URL}",
           "oauth2.device.authorization.grant.enabled": "false",
           "display.on.consent.screen": "false",
           "backchannel.logout.revoke.offline.tokens": "true"
