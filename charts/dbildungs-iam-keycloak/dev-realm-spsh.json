@@ -1497,7 +1497,7 @@
             "protocolMapper": "spsh-custom-oidc-api-mapper",
             "consentRequired": false,
             "config": {
-              "fetchUrl": "http://backend:9090/v2/keycloakinternal/externaldata",
+              "fetchUrl": "${SPSH_BACKEND_SERVER_URL}/v2/keycloakinternal/externaldata",
               "extractJsonPath": "$.rollenart",
               "ignoreMissingPath": "true",
               "keycloakClientId": "",
@@ -1516,7 +1516,7 @@
             "protocolMapper": "spsh-custom-oidc-api-mapper",
             "consentRequired": false,
             "config": {
-              "fetchUrl": "http://backend:9090/v2/keycloakinternal/externaldata",
+              "fetchUrl": "${SPSH_BACKEND_SERVER_URL}/v2/keycloakinternal/externaldata",
               "extractJsonPath": "$.dienststellenNummern",
               "ignoreMissingPath": "false",
               "keycloakClientId": "",
@@ -1535,7 +1535,7 @@
             "protocolMapper": "spsh-custom-oidc-api-mapper",
             "consentRequired": false,
             "config": {
-              "fetchUrl": "http://backend:9090/v2/keycloakinternal/externaldata",
+              "fetchUrl": "${SPSH_BACKEND_SERVER_URL}/v2/keycloakinternal/externaldata",
               "extractJsonPath": "$.vorname",
               "ignoreMissingPath": "false",
               "keycloakClientId": "",
@@ -1554,7 +1554,7 @@
             "protocolMapper": "spsh-custom-oidc-api-mapper",
             "consentRequired": false,
             "config": {
-              "fetchUrl": "http://backend:9090/v2/keycloakinternal/externaldata",
+              "fetchUrl": "${SPSH_BACKEND_SERVER_URL}/v2/keycloakinternal/externaldata",
               "extractJsonPath": "$.emailAdresse",
               "ignoreMissingPath": "true",
               "keycloakClientId": "",
@@ -1573,7 +1573,7 @@
             "protocolMapper": "spsh-custom-oidc-api-mapper",
             "consentRequired": false,
             "config": {
-              "fetchUrl": "http://backend:9090/v2/keycloakinternal/externaldata",
+              "fetchUrl": "${SPSH_BACKEND_SERVER_URL}/v2/keycloakinternal/externaldata",
               "extractJsonPath": "$.nachname",
               "ignoreMissingPath": "false",
               "keycloakClientId": "",
@@ -1592,7 +1592,7 @@
             "protocolMapper": "spsh-custom-oidc-api-mapper",
             "consentRequired": false,
             "config": {
-              "fetchUrl": "http://backend:9090/v2/keycloakinternal/externaldata",
+              "fetchUrl": "${SPSH_BACKEND_SERVER_URL}/v2/keycloakinternal/externaldata",
               "extractJsonPath": "$.personId",
               "ignoreMissingPath": "false",
               "keycloakClientId": "",
