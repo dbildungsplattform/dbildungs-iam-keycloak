@@ -14,6 +14,7 @@ data:
   KEYCLOAK_ADMIN: "admin"
   KC_SCHOOLSH_CLIENT_ID: "{{ .Values.schoolsh.clientId }}"
   KC_SCHOOLSH_CLIENT_ROOT_URL: "{{ .Values.schoolsh.rootUrl }}"
+  SPSH_BACKEND_SERVER_URL: "http://dbildungs-iam-server-backend.{{ template "common.names.namespace" . }}.svc.cluster.local"
   KC_HTTP_MANAGEMENT_PORT: "8090"
   STATUS_URL: "{{ .Values.status.url }}"
   KC_METRICS_ENABLED: "true"
