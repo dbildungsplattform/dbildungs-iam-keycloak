@@ -11,6 +11,12 @@ After a merge to main a GitHub Workflow builds, uploads (to GHCR) and scans the 
 
 The latest image on GHCR is scanned with trivy every night.
 
+## Keycloak version updates
+
+When changing the Keycloak version in the [Dockerfile](./Dockerfile), also update `keycloak.version` in the [dbildungs-iam-keycloak-providers pom.xml](https://github.com/dbildungsplattform/dbildungs-iam-keycloak-providers/blob/main/pom.xml) to match the Keycloak product version. Image revision suffixes are not part of the Maven dependency version.
+
+Rebuild and test the providers against the updated version, then replace the provider JAR in `src/providers/` before building the Keycloak image.
+
 ## Manual build for local development image
 
 Following steps are intent to build the container for local development purpose.
