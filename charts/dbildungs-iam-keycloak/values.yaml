@@ -42,7 +42,8 @@ command: []
 # Additional JVM options to append to JAVA_OPTS_APPEND.
 # Each entry is a single JVM option string, e.g. "-Xmx2g" or "-Dquarkus.http.host=0.0.0.0".
 # The default -Djgroups.dns.query option is always included.
-javaOpts: []
+javaOpts:
+  - "-XX:-UseBASE64Intrinsics"
 
 extraEnvVars: []
 extraVolumes: []
