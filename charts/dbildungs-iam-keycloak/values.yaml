@@ -36,7 +36,6 @@ auth:
   schoolsh_signingCertificate: ""
   schoolsh_encryptionCertificate: ""
 
-
 command: []
 
 # Additional JVM options to append to JAVA_OPTS_APPEND.
@@ -68,7 +67,7 @@ keycloak2ndHostname: ""
 
 containerSecurityContext:
   enabled: true
-  runAsUser: 1000
+  runAsUser: 10000
   runAsNonRoot: true
   privileged: false
   readOnlyRootFilesystem: false
@@ -138,7 +137,7 @@ keycloak:
   serviceMonitor:
     enabled: true
     path: "/metrics"
-    port: 'mgmt'
+    port: "mgmt"
 
 autoscaling:
   enabled: false
